@@ -1,13 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio page</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-    <p>Trying github page</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/2da31187b4.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="./Images/logoweb-removebg-preview.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineer</p>
+                    <h1>Hi, I'm <span>Axcel</span> <br>From BINUS University</h1>
+                </div>
+            </div>
+        <!-----------about------------>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./Images/userfr.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi there! My name is Axcel Deon Davelin Syahputra but you can call me Axcel. I'm an undergrad currently on my 5th semester with Computer Science as my major. My friends often says I'm a fun guy, I'm outgoing and likes to meet new people, I also love to learn new things, you could say I'm a diligent and hardworking because I believe hardwork and consistency produce good results. I'm a part of the computer engineering student association as the manager of publication and marketing division, being part of the student association I have learned many new skills such as public speaking and time management, it also improve my relations with many student outside my region.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces using HTML, CSS, Java or Figma.</li>
+                                <li><span>Programming Languages</span><br>I can operate using C, Java, HTML, CSS, JS, SQL and Microsoft Office.</li>
+                                <li><span>Soft Skills</span><br>Public Speaking, Communication, Team building, Team Management.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Himpunan Mahasiswa Teknik Informatika</span><br><p>Manager of Publication and Marketing division</p> Publication and Marketing is one of many division in HIMTI. My job is to manage all the member inside the division and make sure the work program is going smoothly.</li>
+                                <li><span>TECHNO 2021</span><br><p>Vice chairmman of the sponsorhip team</p> One of the three mandatory event held by HIMTI. My job is to coordinate the sponsorhip team to find sponsor for our event.</li>
+                                <li><span>HIMTI Anniversary</span><br><p>MC of HIMTI Anniversary</p> One of the annual internal events held by HIMTI. As the MC of the show I have a responsibility to keep the audience entertained during the event.</li>
+                                <li><span>HIMTI Farewell</span><br><p>Member of Fundraising Team</p>HIMTI Farewell is an internal event held by HIMTI to celebrate the previous HIMTI members for their past contribution for HIMTI. My job is to gather funds for the events by selling foods or goods.</li>
+                                <li><span>HILET</span><br><p>Technical Committee of HILET</p>HILET is an event held by HIMTI for the freshman who want to join HIMTI. As the technical committee I work with my team to coordinate the technical part for the event.</li>
+                                <li><span>NITRACKERS 2019</span><br><p>Member of Publication team</p>NITRACKERS is an event held once every two years in my highschool. Being part of the publication team my job is to publicate the event through social media.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-present</span><br>Bina Nusantara University.</li>
+                                <li><span>2017-2019</span><br>SMA Negeri 1 Kota Tangerang.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!------------portfolio----------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/caffeineline (1).jpg">
+                        <div class="layer">
+                            <h1>Caffeineline</h1><br>
+                            <p>Caffeineline is a project that my team and I created for a college subject Human Computer Interaction. We are asked to create a website with a given theme.</p>
+                            <a href="https://github.com/DEONISAVAILABLE/caffeineline"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/vegeutopia-.jpg">
+                        <div class="layer">
+                            <h1>Vegeutopia</h1><br>
+                            <p>Vegeutopia is an web based application created for one of my college subject Software Engineering. It's a team project where my friends and I created an application to help the vegetarian community and people who are trying to become vegetarian.</p>
+                            <a href="https://github.com/DEONISAVAILABLE/Vegeutopia"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/kadoin.jpg">
+                        <div class="layer">
+                            <h1>Kadoin</h1><br>
+                            <p>Kadoin is an application that was created by my team and I for a college subject Pattern Software Design. We created an application using laravel to help people choose a gift suited to their needs.</p>
+                            <a href="https://github.com/akhmadali1/KadoinWeb"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-----------contact----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:deondavelin202@gmail.com"><i class="fa-solid fa-envelope"></a></i>deondavelin202@gmail.com</p>
+                    <p><i class="fa-brands fa-square-whatsapp"></i></i>087786052755</p>
+                    <div class="social-icons">
+                        <a href="https://line.me/ti/p/3V6rMJDIA9"><i class="fa-brands fa-line"></i></a>
+                        <a href="https://instagram.com/axcell_davelin?igshid=NDc0ODY0MjQ="><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="www.linkedin.com/in/axcel-deon-davelin-syahputra-4a9a841b6"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/AXCEL DEON DAVELIN SYAHPUTRA - CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Axcel. Made using HTML CSS and JS <i class="fa-solid fa-rocket"></i></p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzu4pV8aNMYPOLvlZgO4InVz3ti3H_WYGx1xm859vwe6spoGKpTEdRXzlN0sdNNmMCLqg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Your message has been sent!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    </body>
+
 </html>
